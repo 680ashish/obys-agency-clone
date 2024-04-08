@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Plain Light";
+    /* overflow: hidden; */
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ---------------------- */
+        /* cursor  */
+/* --------------------- */
+
+
+#crsr{
+    height:3vh;
+    width: 2vw;
+    border-radius: 50%;
+    border:1px solid rgba(255, 255, 255, 0.649);
+    position: fixed;
+    z-index: 999999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+/* ---------------------- */
+        /* loader  */
+/* --------------------- */
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    background-color: #0b0b0b;
+    padding: 25vh 10vw;
+    /* overflow: hidden; */
+}
+
+.line{
+    /* background: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+    /* border: 1px solid red; */
+
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+    font-family: "Silk Serif";
+    /* border: 1px solid red; */
+    /* width: 200px; */
+    padding: 10px;
+
+}
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 2.8vw;
+    font-weight: 100;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    font-family: "Silk Serif"
+
+}
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.line h2{
+    /* border: 1px solid red; */
+    width: 20%;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
+
+#page1{
+    overflow: hidden;
+
+}
+@keyframes anime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 600;
+        opacity: 1;
+    }
+    45%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 600;
+        opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 600;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: "Silk Serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 600;
+        opacity: 0;
+
+    }
+}
+/* -------------------------------- */
+
+#main{
+    position: relative;
+    background-color: #151515;
+
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #131313;
+}
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 6.5vh;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+#nav-part2 h4{
+    font-size: 0.9vw;
+    font-weight: 500;
+
+}
+.hero{
+    /* background: red; */
+    width: 73%;
+    margin-left: 25%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.hero:nth-child(2){
+    margin-top: 11.5vh;
+}
+.hero h1{
+    font-size: 7vw;
+    text-transform: 8vw;
+    line-height: 9vw;
+    font-weight: 700;
+}
+#hero3 h1 span{
+    border-bottom: 1vw solid white;
+    transition: all ease 0.3s; 
+    
+}
+#hero3 h1 span:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+    border: transparent;
+}
+
+
+
+/* page 2 */
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 17vh;
+    position: relative;
+}
+
+#video-container{
+    height: 66vh;
+    width: 60vw;
+    position: relative;
+    /* border: 1px solid red; */
+
+    left: 37%;
+    /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
+}
+
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top:0;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-cursor{
+    width: 8.5vw;
+    height: 12vh;
+    background: #FFA63D;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+}
+#video-cursor i{
+    font-size: 3vw;
+}
+
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(107, 107, 107);
+    position:relative ;
+}
+
+
+
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(107, 107, 107);
+
+}
+
+#page4-content{
+    width:70vw;
+    margin-left: 28%;
+}
