@@ -134,7 +134,7 @@ html, body{
 
 }
 #page1{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #131313;
 }
@@ -160,12 +160,15 @@ html, body{
     width: 73%;
     margin-left: 25%;
     height: fit-content;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     position: relative;
     z-index: 9999;
 }
+
+
+
 .hero:nth-child(2){
     margin-top: 11.5vh;
 }
@@ -175,6 +178,21 @@ html, body{
     line-height: 9vw;
     font-weight: 700;
 }
+#hero1 {
+    position: relative;
+}
+#hero1::before{
+    content: '01';
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -9.5%;
+    top: -5%;
+    font-family: "silk serif";
+    /* z-index: 99999; */
+    /* background-color: blue; */
+}
+
 #hero3 h1 span{
     border-bottom: 1vw solid white;
     transition: all ease 0.3s; 
@@ -249,13 +267,205 @@ html, body{
 
 
 #page4{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
-    background-color: rgb(107, 107, 107);
+    /* background-color: rgb(107, 107, 107); */
+    position: relative;
+    padding-top: 5vh;
 
 }
 
 #page4-content{
     width:70vw;
     margin-left: 28%;
+}
+
+#page4-content h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    position: relative;
+
+}
+#page4-content h1::before{
+    content: '03';
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -14%;
+    top: 9%;
+    font-family: "silk serif";
+}
+
+#page4-content .underline{
+    height: 2px ;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+
+#page4-content>p {
+    font-size: 2.8vw;
+    width: 50%;
+    font-weight: 550;
+    margin-bottom: 5vw;
+}
+#page4-flex{
+    display: flex;
+}
+#page4-flex img{
+    width: 50%;
+
+}
+#page4-flex p{
+    font-size: 1.2vw;
+    width: 35%;
+    margin-left: 3vw;
+    line-height: 3.3vh;
+    font-weight: 500;
+}
+
+#page4-blue-div{
+    background-color: #3f7df4;
+    width: 43vw;
+    padding: 5vw 4vw;
+    position: relative;
+    margin-top: -30vh;
+    margin-left:30vh ;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.blue-div-element{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.7vw 0;
+    /* border: 1px solid green; */
+    border-bottom: 2px solid #ffffff94;
+}
+.blue-div-element h4{
+    font-size: 1.9vw;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+.blue-div-element p{
+    width: 40%;
+    font-size: 1.2vw;
+    /* margin-left: 2vw; */
+
+}
+
+
+
+
+
+
+#page5 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.elem,
+.elem2 {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1.5vh;
+}
+
+.elem h1,
+.elem2 h1 {
+    font-size: 5vw;
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    color: transparent;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.elem h1 {
+    animation-name: moveRightToLeft;
+}
+
+.elem2 h1 {
+    animation-name: moveRightToLeft;
+    animation-direction: reverse;
+}
+#page5 span{
+    font-family: 'silk serif';
+    font-style: italic;
+    color: transparent;
+}
+
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#footer{
+    width: 100%;
+    height: 70vh;
+    /* background-color: red; */
+    position: relative;
+    padding-left: 26vw;
+    padding-right: 2vw;
+}
+#footer h1{
+    font-size: 8vw;
+    width: 60vw;
+    text-transform: uppercase;
+    position: relative;
+}
+#footer h1::before{
+    content: '04';
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -14%;
+    top: 9%;
+    font-family: "silk serif";
+}
+.underline{
+    height: 2px ;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+}
+#footer-div h6{
+    font-size: 1vw;
+    margin-bottom: 2vh;
+    font-weight: 600;
+
+}
+.box{
+    width: 20%;
+}
+#footer-div h5{
+    font-size: 1.5vw;
+    /* margin: 0.2vh 0; */
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+#footer>h5{
+    margin-top: 2vw;
+    font-weight: 500;
+    font-size: 1vw;
 }
