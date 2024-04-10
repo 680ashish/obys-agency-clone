@@ -50,7 +50,7 @@ function loaderAnimation(){
         opacity:0
     })
     tl.from('.hero h1',{
-        y:130,
+        y:400,
         stagger:0.2
     })
 
@@ -67,7 +67,14 @@ document.addEventListener("mousemove",(dets)=>{
 
     })
 })
+// document.addEventListener("mousemove",(detss)=>{
+//     // console.log("hello");
+//     gsap.to("#video-cursor",{
+//         left:detss.x,
+//         top:detss.y,
 
+//     })
+// })
 function cursorAnimation(){
 Shery.makeMagnet("#nav-part2 h4");
 }
