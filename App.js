@@ -50,7 +50,7 @@ function loaderAnimation(){
         opacity:0
     })
     tl.from('.hero h1',{
-        y:400,
+        y:600,
         stagger:0.2
     })
 
@@ -79,3 +79,14 @@ function cursorAnimation(){
 Shery.makeMagnet("#nav-part2 h4");
 }
 cursorAnimation();
+
+
+const scrollers = document.querySelectorAll(".scroller");
+if(!window.matchMedia("(prefers-reduced-motion)").matches){
+    addAnimation();
+}
+function addAnimation(){
+    scrollers.forEach(scroller =>{
+        scroller.setAttribute("data-animated",true);
+    })
+}
