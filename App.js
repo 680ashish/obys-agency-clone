@@ -28,7 +28,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-
 }
 
 
@@ -94,16 +93,6 @@ function loaderAnimation(){
 
 }
 
-
-// curstom cursor
-// document.addEventListener("mousemove",(dets)=>{
-//     // console.log("hello");
-//     gsap.to("#crsr",{
-//         left:dets.x,
-//         top:dets.y,
-
-//     })
-// })
 
 // function cursorAnimation(){
 // Shery.makeMagnet("#nav-part2 h4");

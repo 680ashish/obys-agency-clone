@@ -217,7 +217,7 @@ body{
 }
 
 #hero3 h1 span{
-    border-bottom: 1vw solid white;
+    border-bottom: 0.6vw solid white;
     transition: all ease 0.3s; 
     /* border: 1px solid red; */
     /* margin: 10px;
@@ -242,6 +242,8 @@ body{
     width: 100%;
     padding-top: 17vh;
     position: relative;
+    margin-bottom: 10vh;
+
 }
 
 #video-container{
@@ -249,7 +251,6 @@ body{
     width: 60vw;
     position: relative;
     /* border: 1px solid red; */
-
     left: 37%;
     /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
 }
@@ -283,6 +284,10 @@ body{
     font-size: 3vw;
 }
 
+  
+/* ---------------------- */
+/* ------- page 3------- */
+/* ---------------------- */
 
 #page3{
     min-height: 100vh;
@@ -290,11 +295,30 @@ body{
     background-color: rgb(40, 40, 40);
     position:relative ;
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    padding: 5vh;
+}
+.card{
+    width: 30vw;
+    height: 60vh;
+    background: #171717;
+    margin: 10px;
+    padding: 90px;
+    border-radius: 10px ;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
 
+}
 
   
 /* ---------------------- */
-/* ------- page 3------- */
+/* ------- page 4------- */
 /* ---------------------- */
 
 #page4{
@@ -328,7 +352,7 @@ body{
 }
 
 #page4-content .underline{
-    height: 2px ;
+    height: 1px ;
     width: 100%;
     background-color: #fff;
     margin: 3vw 0;
@@ -402,6 +426,14 @@ body{
     /* max-width: 70vw; */
     /* border: 1px solid red; */
     margin: 0 auto;
+}
+#page5>h6{
+    margin-left: 28%;
+    margin-bottom: 8vh;
+    margin-top: 0;
+    font-size: 2.5vh;
+    font-weight: 200;
+    font-family: "plain light";
 }
 
 .scroller{
@@ -502,7 +534,7 @@ body{
     font-family: "silk serif";
 }
 .underline{
-    height: 2px ;
+    height: 1px ;
     background-color: #fff;
     margin: 1vw 0;
     margin-bottom: 5vh ;
@@ -515,6 +547,7 @@ body{
     padding-top: 3vw;
     
 }
+
 #footer-div h6{
     font-size: 1vw;
     margin-bottom: 2vh;
@@ -529,6 +562,12 @@ body{
     /* margin: 0.2vh 0; */
     font-weight: 500;
     margin-bottom: 2px;
+    transition: transform 0.2s ease-in;
+    backface-visibility: hidden;
+}
+#footer-div h5:hover{
+    transform: rotateX(90deg);
+
 }
 #footer>h5{
     margin-top: 1vw;
