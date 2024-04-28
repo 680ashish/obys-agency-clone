@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    /* font-family: "Plain Light"; */
-    cursor: none;
+    font-family: "Plain Light";
+    /* cursor: none;*/
     /* overflow: hidden; */
 }
 
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'plain light';
+    font-family: 'Plain Light';
     src: url('/plain-regular-webfont.ttf') format('truetype');
 }
 @font-face {
@@ -50,7 +50,7 @@ body{
     position: fixed;
     z-index: 9999999;
     background-color: #0b0b0b;
-    padding: 25vh 10vw;
+    padding: 20vh 10vw;
     /* overflow: hidden; */
 }
 
@@ -63,6 +63,7 @@ body{
     justify-content: flex-start;
     gap: 3vw;
     /* border: 1px solid red; */
+    white-space: nowrap;
 
 }
 #line1-part1{
@@ -70,7 +71,7 @@ body{
     align-items: center;
     justify-content: center;
     gap:1vw;
-    font-family: "Silk Serif";
+    font-family: "Plain Light";
     /* border: 1px solid red; */
     /* width: 200px; */
     padding: 10px;
@@ -83,20 +84,24 @@ body{
     justify-content: center;
     align-items: center;
     width:100px;
-    font-family: "Silk Serif"
+    font-family: "Silk Serif";
+    /* font-family: "Plain Light"; */
+
 
 }
+
 .line h1{
-    font-size: 6.5vw;
+    font-size: 6.9vw;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 500;
+    font-family: "Plain Light";
 }
 .line h2{
     /* border: 1px solid red; */
     width: 20%;
-    font-size: 4vw;
+    font-size: 4.3vw;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 100;
     opacity: 0;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -145,13 +150,7 @@ body{
 
 
 }
-#page1{
-    height: 90vh;
-    width: 100%;
-    background-color: #131313;
-    overflow: hidden;
-    /* border: 1px solid red; */
-}
+
 #page1 #nav{
     display: flex;
     align-items: center;
@@ -168,6 +167,13 @@ body{
     font-size: 0.9vw;
     font-weight: 500;
 
+}
+#page1{
+    width: 100%;
+    background-color: #151515;
+    /* border: 1px solid red; */
+    font-family: "Plain Light";
+    
 }
 
 .hero{
@@ -187,13 +193,13 @@ body{
 
 
 .hero:nth-child(2){
-    margin-top: 11.5vh;
+    margin-top: 6.5vh;
 }
 .hero h1{
     font-size: 7vw;
     text-transform: 8vw;
-    line-height: 9vw;
-    font-weight: 700;
+    line-height: 8vw;
+    font-weight: 550;
 }
 #hero1 {
     position: relative;
@@ -232,7 +238,7 @@ body{
 /* -------- page2 ------- */
 /* ---------------------- */
 #page2{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding-top: 17vh;
     position: relative;
@@ -281,7 +287,7 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(40, 40, 40);
     position:relative ;
 }
 
@@ -292,7 +298,6 @@ body{
 /* ---------------------- */
 
 #page4{
-    min-height: 90vh;
     width: 100%;
     /* background-color: rgb(107, 107, 107); */
     position: relative;
@@ -309,6 +314,7 @@ body{
     font-size: 6vw;
     text-transform: uppercase;
     position: relative;
+    font-weight: 400;
 
 }
 #page4-content h1::before{
@@ -329,10 +335,11 @@ body{
 }
 
 #page4-content>p {
-    font-size: 2.8vw;
+    font-size: 2.2vw;
     width: 50%;
     font-weight: 550;
     margin-bottom: 5vw;
+    line-height: 1.15;
 }
 #page4-flex{
     display: flex;
@@ -390,12 +397,13 @@ body{
 
 #page5 {
     position: relative;
-    height: 100%;
+    /* height: 100vh; */
     /* width: 100%; */
     /* max-width: 70vw; */
     /* border: 1px solid red; */
     margin: 0 auto;
 }
+
 .scroller{
     max-width: 100%;
     overflow: hidden;
@@ -415,21 +423,17 @@ body{
 
 }
 .tag-list li{
-    padding: 1rem;
     border-radius: 4px;
-    /* background: rgb(255, 255, 255); */
-    /* margin: 5px; */
     color: black;
-
     font-size: 7vw;
     -webkit-text-stroke: 1px #ffffff;
     font-weight: 400;
     text-transform: uppercase;
-    /* display: inline-block; */
+    line-height: 1.3;
     margin-right: 16px;
     padding: 0;
     color: transparent;
-    /* display: inline-block; */
+
 
 }
 .scroller[data-animated="true"]{
@@ -473,18 +477,20 @@ body{
 
 #footer{
     width: 100%;
+    height: 100vh;
     /* background-color: red; */
     position: relative;
     padding-left: 26vw;
     padding-right: 2vw;
-    height: 100%;
     margin-top: 10vh;
 }
 #footer h1{
     font-size: 8vw;
     width: 60vw;
+    font-weight: 500;
     text-transform: uppercase;
     position: relative;
+    padding-bottom: 8vh;
 }
 #footer h1::before{
     content: '04';
@@ -499,6 +505,7 @@ body{
     height: 2px ;
     background-color: #fff;
     margin: 1vw 0;
+    margin-bottom: 5vh ;
 }
 #footer-div{
     display: flex;
@@ -527,4 +534,8 @@ body{
     margin-top: 1vw;
     font-weight: 500;
     font-size: 1vw;
+}
+.copyright{
+    margin-top: 6vh;
+    /* border: 1px solid red; */
 }

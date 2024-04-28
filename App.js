@@ -59,21 +59,21 @@ function loaderAnimation(){
                     else{
                         grow=100;
                     }
-                }, 15);
+                }, 20);
         }
     })
     tl.to(".line h2",{
         animationName:"anime",
-        opacity:1
+        opacity:1,
+        // duration:0.5,
     })
     tl.to('#loader',{
         opacity:0,
-        duration:0.3,
-        delay:1,// default = 3
+        duration:1,
+        delay:2,// default = 3
         display:"none"
     });
     tl.from('#page1',{
-        delay:0.2,
         y:1600,
         opacity:0,
         duration:0.5,
@@ -88,7 +88,8 @@ function loaderAnimation(){
     })
     tl.from('.hero h1',{
         y:500,
-        stagger:0.2
+        stagger:0.4,
+        opacity:0,
     })
 
 }
@@ -153,7 +154,7 @@ function addAnimation(){
 }
 
 
-//calling loader 
+// calling loader 
 loaderAnimation();
 // calling cursor animation
 cursorAnimation();
