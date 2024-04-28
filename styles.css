@@ -3,17 +3,38 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: "Plain Light";
+    /* font-family: "Plain Light"; */
+    cursor: none;
     /* overflow: hidden; */
 }
+
+@font-face {
+    font-family: 'Plain Light';
+    src: url('./plain-light-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'plain light';
+    src: url('/plain-regular-webfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('/silkserif-lightitalic-webfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('/silkserif-regularitalic-webfont.ttf') format('truetype');
+}
+
+
 html, body{
     height: 100%;
     width: 100%;
 }
-
 body{
-    overflow-x: hidden;
+    background-color:#151515;
 }
+
 /* ---------------------- */
         /* cursor  */
 /* --------------------- */
@@ -85,10 +106,7 @@ body{
     text-align: right;
 }
 
-#page1{
-    overflow: hidden;
 
-}
 @keyframes anime {
     0%{
         font-family: "Plain Light";
@@ -123,12 +141,16 @@ body{
 #main{
     position: relative;
     background-color: #151515;
+    /* border: 1px solid red; */
+
 
 }
 #page1{
     height: 90vh;
     width: 100%;
     background-color: #131313;
+    overflow: hidden;
+    /* border: 1px solid red; */
 }
 #page1 #nav{
     display: flex;
@@ -147,16 +169,19 @@ body{
     font-weight: 500;
 
 }
+
 .hero{
     /* background: red; */
     width: 73%;
     margin-left: 25%;
     height: fit-content;
+    padding-left: 8vh;
     /* overflow: hidden; */
     display: flex;
     align-items: center;
     position: relative;
     z-index: 9999;
+
 }
 
 
@@ -188,7 +213,13 @@ body{
 #hero3 h1 span{
     border-bottom: 1vw solid white;
     transition: all ease 0.3s; 
-    
+    /* border: 1px solid red; */
+    /* margin: 10px;
+    padding: 10px; */
+    transition: 0.2s linear;
+    font-weight: 500;
+
+    -webkit-text-stroke: 1px transparent;
 }
 #hero3 h1 span:hover{
     -webkit-text-stroke: 1px white;
@@ -196,7 +227,6 @@ body{
     font-weight: 500;
     border: transparent;
 }
-
   
 /* ---------------------- */
 /* -------- page2 ------- */
@@ -212,7 +242,7 @@ body{
     height: 66vh;
     width: 60vw;
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     left: 37%;
     /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
@@ -231,8 +261,8 @@ body{
     object-fit: cover;
 }
 #video-cursor{
-    width: 8.5vw;
-    height: 12vh;
+    width: 10vw;
+    height: 10vw;
     background: #FFA63D;
     border-radius: 50%;
     position: absolute;
@@ -242,8 +272,6 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    position: absolute;
-
 }
 #video-cursor i{
     font-size: 3vw;
@@ -324,7 +352,7 @@ body{
 #page4-blue-div{
     background-color: #3f7df4;
     width: 43vw;
-    padding: 5vw 4vw;
+    padding: 3vw 4vw;
     position: relative;
     margin-top: -30vh;
     margin-left:30vh ;
@@ -362,7 +390,7 @@ body{
 
 #page5 {
     position: relative;
-    min-height: 80vh;
+    height: 100%;
     /* width: 100%; */
     /* max-width: 70vw; */
     /* border: 1px solid red; */
@@ -435,41 +463,6 @@ body{
         transform: translate(calc(-50% - 0.5rem));
     }
 }
-/* .elem {
-    display: block;
-    border: 1px solid green;
-    flex-wrap: wrap;
-    overflow: scroll;
-} */
-
-/* .elem,
-.elem2 {
-    white-space: nowrap;
-    overflow-x: hidden;
-    margin-bottom: 1.5vh;
-}
-
-.elem h1,
-.elem2 h1 {
-    font-size: 5vw;
-    -webkit-text-stroke: 1px #ffffff;
-    font-weight: 400;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-right: 16px;
-    color: transparent;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-
-
-/* #page5 span{
-    font-family: 'silk serif';
-    font-style: italic;
-    color: transparent;
-} */
 
 
 /* ---------------------- */
@@ -480,11 +473,12 @@ body{
 
 #footer{
     width: 100%;
-    height: 70vh;
     /* background-color: red; */
     position: relative;
     padding-left: 26vw;
     padding-right: 2vw;
+    height: 100%;
+    margin-top: 10vh;
 }
 #footer h1{
     font-size: 8vw;
@@ -504,14 +498,15 @@ body{
 .underline{
     height: 2px ;
     background-color: #fff;
-    margin: 3vw 0;
+    margin: 1vw 0;
 }
 #footer-div{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding-right: 15vw;
-    padding-top: 4vw;
+    padding-top: 3vw;
+    
 }
 #footer-div h6{
     font-size: 1vw;
@@ -529,7 +524,7 @@ body{
     margin-bottom: 2px;
 }
 #footer>h5{
-    margin-top: 2vw;
+    margin-top: 1vw;
     font-weight: 500;
     font-size: 1vw;
 }

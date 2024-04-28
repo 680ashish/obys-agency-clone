@@ -38,10 +38,11 @@ function loaderAnimation(){
     const tl = gsap.timeline() // this is for loader  
 
     tl.from(".line h1",{
-        y:150,
+        y:250,
         stagger:0.25,
         duration:0.6,
-        delay:0.5
+        delay:0.5,
+        opacity:1
     })
     tl.from('#line1-part1',{
         opacity:0,
@@ -58,7 +59,7 @@ function loaderAnimation(){
                     else{
                         grow=100;
                     }
-                }, 30);
+                }, 15);
         }
     })
     tl.to(".line h2",{
@@ -86,7 +87,7 @@ function loaderAnimation(){
         opacity:0
     })
     tl.from('.hero h1',{
-        y:600,
+        y:500,
         stagger:0.2
     })
 
@@ -116,29 +117,29 @@ function cursorAnimation(){
     });
     Shery.makeMagnet("#nav-part2 h4");
     const videoContainer = document.querySelector("#video-container");
-    videoContainer.addEventListener("mouseenter",function (){
-        videoContainer.addEventListener("mousemove",(dets)=>{
-            gsap.to(".mouseFollower",{
-                opacity:0,
-            })
-            gsap.to("#video-cursor",{
-                left:dets.x -440,
-                y:dets.y -100,
-            })
-        })
-    })
+    const videoCursor = document.querySelector("#video-cursor");
+    
+    videoContainer.addEventListener("mousemove", (event) => {
+        const rect = videoContainer.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left; // Adjust for container position
+        const mouseY = event.clientY - rect.top;  // Adjust for container position
+    
+        gsap.to(".mouseFollower", {
+            opacity: 1,
+        });
+        gsap.to(videoCursor, {
+            x: mouseX - 800,
+            y: mouseY - 100,
+        });
+    });
+    
+    videoContainer.addEventListener("mouseleave", () => {
+        gsap.to(videoCursor, {
+            x: 0, // Original X position
+            y: 0, // Original Y position
+        });
+    });
 }
-// const videoContainer = document.querySelector("#video-container");
-
-// videoContainer.addEventListener("mouseleave",function(){
-//     gsap.to(".mouseFollower",{
-//         display:"initial"
-//     })
-//     gsap.to(".video-cursor",{
-//         left:"80%",
-//         top:"-5%",
-//     })
-// })
 
 //  page 5 animation or you can say slider animations
 const scrollers = document.querySelectorAll(".scroller");
