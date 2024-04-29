@@ -7,7 +7,8 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" /> <!-- Recommended -->
 
     <!-- fonts -->
     <link rel="stylesheet" href="./plain-light-webfont.ttf">
@@ -76,7 +77,7 @@
             
             
         </div>
-        <div id="page2" data-scroll >
+        <div id="page2" data-scroll data-scroll-speed="-2.5" >
             <div id="video-container">
                 <div id="video-cursor">
                     <i class="ri-play-mini-fill"></i>
@@ -90,20 +91,26 @@
                 <!-- page 3 -->
         <!-- --------------------- -->
 
-        <div id="page3" data-scroll>
-            <div class="cards">
-                <div class="card">Image Loading....</div>
-                <div class="card">Image Loading....</div>
-                <div class="card">Image Loading....</div>
-                <div class="card">Image Loading....</div>
-                <div class="card">Image Loading....</div>
-                <div class="card">Image Loading....</div>
+        <div id="page3" data-scroll >
+            <div id="page3-content">
+                <h1>Our projects</h1>
+                <div class="underline"></div>
+                <div id="img-div-container">
+                    <div class="img-div">
+                        <img src="" alt="">
+                        img ayegi jald hi.....
+                    </div>
+                    <div class="img-div">
+                        <img src="" alt="">
+                        img ayegi jald hi.....
 
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <div id="page4" data-scroll>
+        <div id="page4" data-scroll data-scroll-speed="-2.5">
             <div id="page4-content">
                 <h1>About Obys</h1>
                 <div class="underline"></div>
@@ -144,7 +151,7 @@
 
             </div>
         </div>
-        <div id="page5" class="scroller" data-scroll>
+        <div id="page5" class="scroller" data-scroll data-scroll-speed="-2.5">
             <h6>We work with</h6>
             <ul class="tag-list scroller_inner">
                 <li><span>Sport -</span>  </li>
@@ -186,7 +193,7 @@
         </div>
 
 
-        <footer id="footer" data-scroll>
+        <footer id="footer" data-scroll data-scroll-speed="-2.5">
             <h1>let's create</h1>
             <div class="underline"></div>
             <div id="footer-div">
@@ -225,6 +232,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
     <!-- external js -->

@@ -172,6 +172,7 @@ body{
     width: 100%;
     background-color: #151515;
     /* border: 1px solid red; */
+    margin-bottom: 10vh;
     font-family: "Plain Light";
     
 }
@@ -242,7 +243,7 @@ body{
     width: 100%;
     padding-top: 17vh;
     position: relative;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 
 }
 
@@ -289,49 +290,81 @@ body{
 /* ------- page 3------- */
 /* ---------------------- */
 
+/* it is actually page 2 after that video container */
 #page3{
-    min-height: 100vh;
     width: 100%;
-    background-color: rgb(40, 40, 40);
-    position:relative ;
-}
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    /* border: 1px solid red; */
-    padding: 5vh;
-}
-.card{
-    width: 30vw;
-    height: 60vh;
-    background: #171717;
-    margin: 10px;
-    padding: 90px;
-    border-radius: 10px ;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid blue; */
-
-}
-
-  
-/* ---------------------- */
-/* ------- page 4------- */
-/* ---------------------- */
-
-#page4{
-    width: 100%;
+    height: 100vh;
     /* background-color: rgb(107, 107, 107); */
     position: relative;
     padding-top: 5vh;
+    margin-bottom: 30vh;
+    /* border: 1px solid red; */
 
+}
+
+#page3-content{
+    width:70vw;
+    margin-left: 28%;
+    
+}
+
+#page3-content h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 400;
+}
+#page3-content h1::before{
+    content: '02';
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -14%;
+    top: 9%;
+    font-family: "silk serif";
+}
+
+#page3-content .underline{
+    height: 1px ;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+#img-div-container{
+    background-color: #202020;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3vh;
+}
+
+.img-div{
+    width: 50vh;
+    height: 50vh;
+    /* border: 1px solid red; */
+    background-color: #3e3b3b;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------- */
+/* ------- page 4------- */
+/* ---------------------- */
+/* this is actually page 3  */
+#page4{
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-top: 5vh;
+    /* margin-bottom: 90vh; */
 }
 
 #page4-content{
     width:70vw;
     margin-left: 28%;
+    margin-bottom: 60vh;
 }
 
 #page4-content h1{
@@ -418,7 +451,7 @@ body{
 /* ------- page 5 ------- */
 /* ---------------------- */
 
-
+/* and this is fukin page 4  */
 #page5 {
     position: relative;
     /* height: 100vh; */
@@ -426,6 +459,7 @@ body{
     /* max-width: 70vw; */
     /* border: 1px solid red; */
     margin: 0 auto;
+    margin-bottom: 40vh;
 }
 #page5>h6{
     margin-left: 28%;

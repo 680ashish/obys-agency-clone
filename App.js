@@ -40,7 +40,7 @@ function loaderAnimation(){
         y:250,
         stagger:0.25,
         duration:0.6,
-        delay:0.5,
+        delay:0.2,
         opacity:1
     })
     tl.from('#line1-part1',{
