@@ -234,7 +234,17 @@ body{
     font-weight: 500;
     border: transparent;
 }
-  
+#flag{
+    height: 28vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+#hero{
+    position: relative;
+}
 /* ---------------------- */
 /* -------- page2 ------- */
 /* ---------------------- */
