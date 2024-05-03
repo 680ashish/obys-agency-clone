@@ -4,8 +4,7 @@
     box-sizing: border-box;
     color: white;
     font-family: "Plain Light";
-    /* cursor: none;*/
-    /* overflow: hidden; */
+    cursor: none;
 }
 
 @font-face {
@@ -51,18 +50,15 @@ body{
     z-index: 9999999;
     background-color: #0b0b0b;
     padding: 20vh 10vw;
-    /* overflow: hidden; */
 }
 
 .line{
-    /* background: red; */
     height: fit-content;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 3vw;
-    /* border: 1px solid red; */
     white-space: nowrap;
 
 }
@@ -72,22 +68,16 @@ body{
     justify-content: center;
     gap:1vw;
     font-family: "Plain Light";
-    /* border: 1px solid red; */
-    /* width: 200px; */
     padding: 10px;
 
 }
 #line1-part1 h5, #line1-part1 h6{
     font-size: 2.8vw;
     font-weight: 100;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
     width:100px;
     font-family: "Silk Serif";
-    /* font-family: "Plain Light"; */
-
-
 }
 
 .line h1{
@@ -97,7 +87,6 @@ body{
     font-family: "Plain Light";
 }
 .line h2{
-    /* border: 1px solid red; */
     width: 20%;
     font-size: 4.3vw;
     text-transform: uppercase;
@@ -146,9 +135,6 @@ body{
 #main{
     position: relative;
     background-color: #151515;
-    /* border: 1px solid red; */
-
-
 }
 
 #page1 #nav{
@@ -166,33 +152,25 @@ body{
 #nav-part2 h4{
     font-size: 0.9vw;
     font-weight: 500;
-
 }
 #page1{
     width: 100%;
     background-color: #151515;
-    /* border: 1px solid red; */
     margin-bottom: 10vh;
     font-family: "Plain Light";
     
 }
 
 .hero{
-    /* background: red; */
     width: 73%;
     margin-left: 25%;
     height: fit-content;
     padding-left: 8vh;
-    /* overflow: hidden; */
     display: flex;
     align-items: center;
     position: relative;
     z-index: 9999;
-
 }
-
-
-
 .hero:nth-child(2){
     margin-top: 6.5vh;
 }
@@ -213,19 +191,13 @@ body{
     left: -9.5%;
     top: -5%;
     font-family: "silk serif";
-    /* z-index: 99999; */
-    /* background-color: blue; */
 }
 
 #hero3 h1 span{
     border-bottom: 0.6vw solid white;
     transition: all ease 0.3s; 
-    /* border: 1px solid red; */
-    /* margin: 10px;
-    padding: 10px; */
     transition: 0.2s linear;
     font-weight: 500;
-
     -webkit-text-stroke: 1px transparent;
 }
 #hero3 h1 span:hover{
@@ -249,19 +221,16 @@ body{
 /* -------- page2 ------- */
 /* ---------------------- */
 #page2{
-    /* height: 100vh; */
     width: 100%;
     padding-top: 17vh;
     position: relative;
     margin-bottom: 20vh;
-
 }
 
 #video-container{
     height: 66vh;
     width: 60vw;
     position: relative;
-    /* border: 1px solid red; */
     left: 37%;
     /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
 }

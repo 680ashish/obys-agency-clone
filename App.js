@@ -58,7 +58,7 @@ function loaderAnimation(){
                     else{
                         grow=100;
                     }
-                }, 20);
+                }, 18);
         }
     })
     tl.to(".line h2",{
@@ -98,6 +98,11 @@ function loaderAnimation(){
 // Shery.makeMagnet("#nav-part2 h4");
 // }
 
+function magnetAnimation(){
+    Shery.makeMagnet("#nav-part2 h4");
+    Shery.makeMagnet("#nav .brand__svg");
+}
+
 
 function cursorAnimation(){
     Shery.mouseFollower({
@@ -105,8 +110,7 @@ function cursorAnimation(){
         ease: "cubic-bezier(0.23,1,0.320,1)",
         duration:0.2,
     });
-    Shery.makeMagnet("#nav-part2 h4");
-    Shery.makeMagnet("#nav svg");
+
 
     const videoContainer = document.querySelector("#video-container");
     const videoCursor = document.querySelector("#video-cursor");
@@ -163,6 +167,8 @@ loaderAnimation();
 cursorAnimation();
 //calling locomotive fuction
 locomotiveAnimation();
+// magent animation
+magnetAnimation();
 
 
 document.addEventListener("mousemove",function(dets){
